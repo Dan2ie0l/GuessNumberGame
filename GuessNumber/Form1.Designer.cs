@@ -41,22 +41,26 @@
             // 
             // btnCheck
             // 
+            this.btnCheck.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCheck.ForeColor = System.Drawing.Color.Blue;
             this.btnCheck.Location = new System.Drawing.Point(363, 45);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(103, 32);
             this.btnCheck.TabIndex = 0;
             this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.UseVisualStyleBackColor = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnTry
             // 
+            this.btnTry.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnTry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTry.Location = new System.Drawing.Point(124, 266);
             this.btnTry.Name = "btnTry";
             this.btnTry.Size = new System.Drawing.Size(124, 55);
             this.btnTry.TabIndex = 1;
             this.btnTry.Text = "Try Again";
-            this.btnTry.UseVisualStyleBackColor = true;
+            this.btnTry.UseVisualStyleBackColor = false;
             this.btnTry.Click += new System.EventHandler(this.btnTry_Click);
             // 
             // txtNumber
@@ -77,6 +81,7 @@
             // lblRes2
             // 
             this.lblRes2.AutoSize = true;
+            this.lblRes2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblRes2.Location = new System.Drawing.Point(145, 167);
             this.lblRes2.Name = "lblRes2";
             this.lblRes2.Size = new System.Drawing.Size(0, 13);
@@ -84,22 +89,24 @@
             // 
             // btnPoqr
             // 
+            this.btnPoqr.BackColor = System.Drawing.Color.Red;
             this.btnPoqr.Location = new System.Drawing.Point(349, 209);
             this.btnPoqr.Name = "btnPoqr";
             this.btnPoqr.Size = new System.Drawing.Size(103, 32);
             this.btnPoqr.TabIndex = 5;
             this.btnPoqr.Text = "Poqr";
-            this.btnPoqr.UseVisualStyleBackColor = true;
+            this.btnPoqr.UseVisualStyleBackColor = false;
             this.btnPoqr.Click += new System.EventHandler(this.btnPoqr_Click);
             // 
             // btnHavasar
             // 
+            this.btnHavasar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnHavasar.Location = new System.Drawing.Point(349, 167);
             this.btnHavasar.Name = "btnHavasar";
             this.btnHavasar.Size = new System.Drawing.Size(103, 32);
             this.btnHavasar.TabIndex = 6;
             this.btnHavasar.Text = "Havasar";
-            this.btnHavasar.UseVisualStyleBackColor = true;
+            this.btnHavasar.UseVisualStyleBackColor = false;
             this.btnHavasar.Click += new System.EventHandler(this.btnHavasar_Click);
             // 
             // lblEnd
@@ -113,12 +120,13 @@
             // 
             // btnMec
             // 
+            this.btnMec.BackColor = System.Drawing.Color.Lime;
             this.btnMec.Location = new System.Drawing.Point(349, 129);
             this.btnMec.Name = "btnMec";
             this.btnMec.Size = new System.Drawing.Size(103, 32);
             this.btnMec.TabIndex = 8;
             this.btnMec.Text = "Mec";
-            this.btnMec.UseVisualStyleBackColor = true;
+            this.btnMec.UseVisualStyleBackColor = false;
             this.btnMec.Click += new System.EventHandler(this.btnMec_Click);
             // 
             // Form1
