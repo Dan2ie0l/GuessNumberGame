@@ -68,7 +68,7 @@ namespace GuessNumber
             this.j = mid;
 
             mtapahac2 = mid;
-            lblRes2.Text = Convert.ToString(mtapahac2);
+           // lblRes2.Text = Convert.ToString(mtapahac2);
 
         }
 
@@ -79,10 +79,10 @@ namespace GuessNumber
 
             int mid = (i + j) / 2;
             this.i = mid;
-
+            
 
             mtapahac2 = mid;
-            lblRes2.Text = Convert.ToString(mtapahac2);
+           // lblRes2.Text = Convert.ToString(mtapahac2);
         }
 
         private void btnTry_Click(object sender, EventArgs e)
