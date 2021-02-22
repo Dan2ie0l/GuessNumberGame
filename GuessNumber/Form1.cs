@@ -33,7 +33,7 @@ namespace GuessNumber
             lblResult.Text = "";
             lblRes2.Text = "";
             lblWinGameOverIWin.Text = "";
-           
+
 
         }
 
@@ -47,10 +47,13 @@ namespace GuessNumber
 
             lblRes2.Text = Convert.ToString(NumOfPlayer);
 
-            if (attemptsCount <= 0)
+            if (attemptsCount < 0)
             {
-                lblAttemptsCount.Enabled = false;
-                lblWinGameOverIWin.Text = Convert.ToString("Game Over!");
+                btnCheck.Enabled = false;
+                lblResult.Text = "";
+                lblRes2.Text = "";
+                lblWinGameOverIWin.Text = Convert.ToString($"Game Over! My number is {AINum}");
+
             }
         }
 
@@ -66,10 +69,15 @@ namespace GuessNumber
         void AINumberGuessing()
         {
             int number = int.Parse(txtNumber.Text);
+            
             if (number == AINum)
             {
+                lblResult.Text = "";
+                lblRes2.Text = "";
                 lblResult.ForeColor = Color.Green;
                 lblResult.Text = Convert.ToString("You guessed it");
+                lblWinGameOverIWin.ForeColor = Color.Green;
+                lblWinGameOverIWin.Text = Convert.ToString("You Won!");
 
             }
             else if (number > AINum)
@@ -88,8 +96,10 @@ namespace GuessNumber
         {
             if (rbEqual.Checked)
             {
-                
-                lblWinGameOverIWin.Text = "Game Over, I Won!!";
+                lblResult.Text = "";
+                lblRes2.Text = "";
+                lblWinGameOverIWin.ForeColor = Color.Green;
+                lblWinGameOverIWin.Text = "I Won!!";
             }
             else if (rbGreater.Checked)
             {
@@ -101,7 +111,7 @@ namespace GuessNumber
                 max = NumOfPlayer;
                 NumOfPlayer = (min + max) / 2;
             }
-           
+
 
         }
 

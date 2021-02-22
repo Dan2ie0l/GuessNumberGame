@@ -43,6 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblAttemptsCount = new System.Windows.Forms.Label();
             this.lblWinGameOverIWin = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCheck
@@ -189,17 +190,31 @@
             // 
             this.lblWinGameOverIWin.AutoSize = true;
             this.lblWinGameOverIWin.BackColor = System.Drawing.Color.White;
-            this.lblWinGameOverIWin.Location = new System.Drawing.Point(546, 271);
+            this.lblWinGameOverIWin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblWinGameOverIWin.Location = new System.Drawing.Point(444, 271);
             this.lblWinGameOverIWin.Name = "lblWinGameOverIWin";
-            this.lblWinGameOverIWin.Size = new System.Drawing.Size(31, 13);
+            this.lblWinGameOverIWin.Size = new System.Drawing.Size(60, 25);
             this.lblWinGameOverIWin.TabIndex = 17;
             this.lblWinGameOverIWin.Text = "none";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(399, 61);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(207, 32);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Enter number between 0  and  100\r\n<";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 388);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lblWinGameOverIWin);
             this.Controls.Add(this.lblAttemptsCount);
             this.Controls.Add(this.label4);
@@ -240,6 +255,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblAttemptsCount;
         private System.Windows.Forms.Label lblWinGameOverIWin;
+        private System.Windows.Forms.Label label5;
     }
 }
 
